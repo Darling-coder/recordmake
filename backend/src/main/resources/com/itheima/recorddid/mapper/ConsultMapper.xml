@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.recorddid.mapper.ConsultMapper">
+
+    <resultMap id="BaseResultMap" type="com.itheima.recorddid.entity.Consult">
+            <id property="id" column="id" />
+            <result property="recordId" column="record_id" />
+            <result property="buyerId" column="buyer_id" />
+            <result property="sellerId" column="seller_id" />
+            <result property="question" column="question" />
+            <result property="reply" column="reply" />
+            <result property="createTime" column="create_time" />
+            <result property="replyTime" column="reply_time" />
+            <result property="status" column="status" />
+            <result property="deleted" column="deleted" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,record_id,buyer_id,seller_id,question,reply,
+        create_time,reply_time,status,deleted
+    </sql>
+</mapper>
